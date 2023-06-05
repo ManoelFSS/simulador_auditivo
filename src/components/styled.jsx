@@ -9,6 +9,8 @@ export const Container = styled.section`
     background-color:#C74F4F;
     padding: 20px;
     transition: all 0.4s;
+    user-select: none;
+    outline: none;
 
     div{
       padding: 10px;
