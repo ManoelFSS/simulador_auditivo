@@ -98,7 +98,7 @@ export const ContainerLeft = styled.section`
         audio{
           width: 330px;
           @media(max-width:740px){
-            max-width: 220px;
+            max-width: 230px;
           }
         }
 
