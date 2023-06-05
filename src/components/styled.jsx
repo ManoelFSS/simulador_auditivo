@@ -31,7 +31,7 @@ export const Div = styled.section`
     @media(max-width:740px){
       display: block;
       border-radius: 50px;
-      padding: 10px;
+      padding: 0px;
     }
 `;
 
@@ -89,6 +89,12 @@ export const ContainerLeft = styled.section`
         ol{
             padding: 0px 0px 0px 15px;
             color: #a1a1a1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media(max-width:740px){
+              width:100%;
+            }
         }
 
         li{
