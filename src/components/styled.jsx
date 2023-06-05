@@ -106,7 +106,7 @@ export const ContainerLeft = styled.section`
         audio{
           width: 330px;
           @media(max-width:740px){
-            max-width: 230px;
+            max-width: 250px;
           }
         }
 
@@ -149,6 +149,6 @@ export const AreaBtns = styled.section`
     display: flex;
     gap: 30px;
     @media(max-width:740px){
-      gap: 10px;
+      gap: 30px;
     }
 `;
