@@ -17,7 +17,7 @@ export const Container = styled.section`
     }
 
     h3{
-      padding: 0px 0px 10px 0px;
+      height: 28px;
       color: #fff;
       border-bottom: solid 3px #fff;
     }
@@ -65,12 +65,20 @@ export const ContainerLeft = styled.section`
       justify-content: center;
       align-items: center;
     
-      div{
+      div {
         display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: center;
         padding: 20px;
+
+        section{
+          width: 100%;
+          @media(max-width:740px){
+            display: flex;
+            justify-content: center;
+          }
+        }
    
         @media(max-width:740px){
           padding: 10px;
@@ -78,7 +86,7 @@ export const ContainerLeft = styled.section`
         }
 
         h4{
-            height: 25px;
+            height: 28px;
             border-bottom: 3px solid #fff;
             width:116px;
             font-size: 18px;
@@ -110,10 +118,16 @@ export const ContainerLeft = styled.section`
           }
         }
 
-        p{
+        span{
           color: #fff;
+          font-weight: 800;
+          
+        }
+
+        p{
+          color: #fff !important;
           border-bottom:solid 3px #fff;
-          padding: 0px 0px 10px 0px;
+          height: 25px;
           cursor: pointer;
         }
 

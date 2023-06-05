@@ -103,29 +103,31 @@ import som07 from '../sonds/som07.mp3'
                   <div >
                     {hendelTeste === true && 
                         <>
-                            <div className="toggleArea">
-                                <audio 
-                                    controls src={audio} 
-                                    onPlay={handlePlay} 
-                                    onEnded={handleAudioEnded} 
-                                    onPause={handlePause}
-                                />
-                                <S.AreaBtns>
+                          <div className="toggleArea">
+                              <audio 
+                                controls src={audio} 
+                                onPlay={handlePlay} 
+                                onEnded={handleAudioEnded} 
+                                onPause={handlePause}
+                              /> <span>{`${audioCount + 1} | 7 `}</span>
+                              <S.AreaBtns>
                                 <S.Button onClick={hendelClickAnterior}>
-                                    Anterior
+                                  Anterior
                                 </S.Button>
                                 <S.Button onClick={hendelClickProximo}>
-                                    Próximo
+                                  Próximo
                                 </S.Button>
-                                </S.AreaBtns>
-                            </div>
-                            <p onClick={hendelTexteClick}>FECHAR</p>
+                              </S.AreaBtns>
+                          </div>
+                          <p onClick={hendelTexteClick}>Voltar</p>
                        </>
                     }
       
                     {hendelTeste === false && 
                       <div className="toggleArea">
-                        <h4>Instruções</h4>
+                        <section>
+                            <h4>Instruções</h4>
+                        </section>
                         <ol>
                           <li>Encontre um lugar silencioso.</li>
                           <li>Use fones de ouvido e ajuste o volume mínimo.</li>
@@ -133,9 +135,11 @@ import som07 from '../sonds/som07.mp3'
                           <li>Ecolha entre a Orelha esquerda/direita e faça o teste sonoro em ambas.</li>
                           <li>Repita o teste, se necessário.</li>
                         </ol>
-                        <S.Button onClick={hendelTexteClick}>
-                          Iniciar Teste
-                        </S.Button>
+                        <section>
+                          <S.Button onClick={hendelTexteClick}>
+                            Iniciar Teste
+                          </S.Button>
+                        </section>
                       </div>
                     }
                   </div>
