@@ -103,7 +103,7 @@ export const ContainerLeft = styled.section`
             flex-direction: column;
             justify-content: center;
             @media(max-width:740px){
-              width:100%;
+              width:90%;
             }
         }
 
@@ -121,14 +121,14 @@ export const ContainerLeft = styled.section`
         span{
           color: #fff;
           font-weight: 800;
-          
+
         }
 
         p{
           color: #fff !important;
           border-bottom:solid 3px #fff;
           height: 25px;
-          cursor: pointer;
+          cursor: pointer;;
         }
 
       }

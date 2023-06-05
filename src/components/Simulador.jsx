@@ -111,9 +111,11 @@ import som07 from '../sonds/som07.mp3'
                                 onPause={handlePause}
                               /> <span>{`${audioCount + 1} | 7 `}</span>
                               <S.AreaBtns>
-                                <S.Button onClick={hendelClickAnterior}>
-                                  Anterior
-                                </S.Button>
+                                { audioCount > 0 &&
+                                  <S.Button onClick={hendelClickAnterior}>
+                                    Anterior
+                                  </S.Button>
+                                }
                                 <S.Button onClick={hendelClickProximo}>
                                   Próximo
                                 </S.Button>
@@ -132,7 +134,7 @@ import som07 from '../sonds/som07.mp3'
                           <li>Encontre um lugar silencioso.</li>
                           <li>Use fones de ouvido e ajuste o volume mínimo.</li>
                           <li>Siga as instruções do teste.</li>
-                          <li>Ecolha entre a Orelha esquerda/direita e faça o teste sonoro em ambas.</li>
+                          {/* <li>Ecolha entre a Orelha esquerda/direita e faça o teste sonoro em ambas.</li> */}
                           <li>Repita o teste, se necessário.</li>
                         </ol>
                         <section>
