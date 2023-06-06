@@ -55,8 +55,35 @@ export const ContainerRight = styled.section`
     border-radius: 50%;
     @media(max-width:740px){
       max-width: 150px;
+      transform: scale(0.7);
+    }
+ 
+  }
+
+  .animation{
+    animation: anima 1s alternate-reverse infinite;
+  }
+
+  @keyframes anima {
+    0%{
+      box-shadow: 0px 0px 10px #ff00002f;
+    }
+    25%{
+      box-shadow: 0px 0px 20px #002383ea;
+      transform: scale(0.8);;
+    }
+    50%{
+      box-shadow: 0px 0px 30px #c7e907dd;
+    }
+    75%{
+      box-shadow: 0px 0px 40px #a5198ed8;
+    }
+    100%{
+      box-shadow: 0px 0px 50px #ff0000c5;
+      transform: scale(0.7);
     }
   }
+
     
 `;
 

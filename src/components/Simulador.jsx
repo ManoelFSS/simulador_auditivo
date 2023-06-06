@@ -23,6 +23,7 @@ import som07 from '../sonds/som07.mp3'
             if(audioCount > 0){
                 setAudioCount(audioCount - 1)
                 setDisplay('')
+                document.querySelector('img').classList.remove('animation')
             }     
            
         };
@@ -31,6 +32,7 @@ import som07 from '../sonds/som07.mp3'
             if(audioCount < 6){
                 setAudioCount(audioCount + 1)
                 setDisplay('')
+                document.querySelector('img').classList.remove('animation')
             }       
            
         };
@@ -67,26 +69,28 @@ import som07 from '../sonds/som07.mp3'
         const hendelTexteClick = () => {
             setHendelTeste(!hendelTeste);
             setDisplay('')
-    
+            document.querySelector('img').classList.remove('animation')
           };
 
           const handlePlay = () => {
             // Lógica da função a ser executada quando o áudio é reproduzido
             console.log("O áudio foi reproduzido!");
             setDisplay(Gif)
-          
+            document.querySelector('img').classList.add('animation')
           };
 
           const handleAudioEnded = () => {
             // Lógica da função a ser executada quando o áudio terminar de tocar
             console.log("O áudio terminou de tocar!");
             setDisplay('')
+            document.querySelector('img').classList.remove('animation')
           };
 
           const handlePause = () => {
             // Lógica da função a ser executada quando o áudio é pausado
-            console.log("O áudio foi pausado!");
+              console.log("O áudio foi pausado!");
               setDisplay('')
+              document.querySelector('img').classList.remove('animation')
           };
         
         return (
