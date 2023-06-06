@@ -98,13 +98,16 @@ export const ContainerLeft = styled.section`
         }
 
         ol{
-            padding: 0px 0px 0px 15px;
+           
             color: #a1a1a1;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-left: 15px;
             @media(max-width:740px){
-              width:90%;
+              width:100%;
+              margin-left: 18px;
+             
             }
         }
 
